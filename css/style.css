@@ -897,9 +897,7 @@ background-color: #40afff;
     justify-content: space-between;
     align-items: center;
     border-radius: 15px;    
-    box-shadow: 0 1px 14px 0 rgb(184 175 174 / 36%);
     padding: 1rem;
-    background: #fb76a1;
     margin-bottom: 2rem;
 }
 .trade_img{
@@ -908,13 +906,20 @@ background-color: #40afff;
 }
 .total_unit{
     font-size: 13px;
-    font-weight: 400;
-    color: #60458c;
+    font-weight: 700;
+    color: #000;
 }
-/* .trade_profit_btn{
-    color: white;
-    border-radius: 5px;
-} */
+.trade_bg_img{
+    background: url('../images/bg3.f538319.f538319b.png');
+    background-size: 100% 100%;
+}
+.trade_profit_btn{
+    box-shadow: 0 23px 45px 0 rgb(196 171 154 / 50%);
+    background: linear-gradient(270deg,#dbbfad,#b39987);
+    padding: 0.7rem 2rem;
+    border-radius: 40px;
+    color: #FFF;
+}
 /*------------------------------ Trade End------------------------- */
 
 /*------------------------------ Share Start------------------------- */
@@ -924,48 +929,49 @@ background-color: #40afff;
 }
 .share_img img{
     width: 211.188px;
-    height: 199.672px;
 }
 .share_text h3{
-    font-size: 21.6px;
+    font-size: 25px;
     line-height: 21.6px;
     font-weight: 700;
-    color: #271249;
+    color: #000;
     text-align: center;
 }
 .share_text p{
     text-align: center;
-    font-weight: 400;
-    color: #7a6daa;
+    font-weight: 700;
+    color: #9696a1;
+    font-size: 1rem;
 }
 .share_form_group input{
     color: #fff!important;
-    background-color: #fb76a1;
+    background-color: #0c665a;
     border-radius: 28.32px!important;
     
 }
 .share_form_group input:focus{
-    background-color: #fb76a1;
+    background-color:#0c665a;
     
 }
 .share_form_group button{
     font-size: 12.48px;
-    color: #fb76a1;
-    background: #fff;
     position: absolute;
     right: 2%;
     border-radius: 24px!important;
+    background: linear-gradient(270deg,#dbbfad,#b39987);
+    box-shadow: 0 23px 45px 0 rgb(196 171 154 / 50%);
+    color: #FFF;
 }
 .qr_text h3{
     text-align: center;
     color: #FFF;
-    font-size: 34.56px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 34.56px;
 }
 .qr_text p{
     text-align: center;
-    color: #FFF;
+    color: #7cb6af;
     font-size: 16.32px;
     font-weight: 400;
     line-height: 16.32px;
@@ -990,11 +996,17 @@ background-color: #40afff;
     display: flex;
     justify-content: space-around;
     background-color: #FFF;
+    width: 94%;
+    margin: auto;
+    border-radius: 25px;
+    padding: 0 1rem;
 }
 .team_level_container button{
-    background-color: #3bd1d6;
-    border: 1px solid #3bd1d6;
-    padding: .3rem 3.1rem!important;
+    color: #fff;
+    background-color: #0c665a;
+    border-color: #0c665a;
+    border-radius: 5px;
+    padding: .3rem 2rem!important;
 }
 .team_level_container button:hover{
     background-color: #3bd1d6;
@@ -1005,7 +1017,9 @@ background-color: #40afff;
     justify-content: space-between;
     padding: 0 .9rem;
     background-color: #FFF;
-    border-bottom: 2px solid grey;
+    width: 94%;
+    margin: auto;
+    border-radius: 25px;
 }
 .team_pagination_down{
     display: flex;
