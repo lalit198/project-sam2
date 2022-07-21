@@ -454,7 +454,6 @@ input:checked + .slider:before {
 
 .join_section{
     overflow: hidden;
-    background-color: #fff;
     box-shadow: -2px -45px 65px 0 rgb(45 100 90 / 10%);
 }
 .top_line_container{
@@ -547,7 +546,7 @@ input:checked + .slider:before {
 }
 
 .member_warp_inner{
-    background-color: #fff;
+    background: linear-gradient(#99f1e5,#2db5a3);
     border-radius: 20px;
     padding: .96rem 1.74rem;
 }
@@ -555,27 +554,24 @@ input:checked + .slider:before {
    display: flex;
    flex-direction: column;
 }
-.member_warp_inner_content img{
-    width: 180px!important;
-}
 .member_warp_inner_content span p{
     display: inline-block;
     vertical-align: text-bottom;
     font-size: 1.6rem;
     line-height: 1.35rem;
-    font-weight: 700;
+    font-weight: 500;
     color: #000;
     max-width: 15.18rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: -.16rem;
 }
 .member_warp_inner_content  span{
     font-size: 1.2rem;
     line-height: .87rem;
-    font-weight: 700;
+    font-weight: 500;
     color: #9696a1;
     text-align: center;
 }
@@ -710,6 +706,65 @@ input:checked + .slider:before {
 
 /*-------------------------- DASHBOARD CODE END--------------------- */
 
+/*------------------------ Mine Code Starts -----------------------*/
+.mine_upper_text_head{
+    font-weight: 700;
+    font-size: 14px;
+    color: #191919;
+    text-align: center;
+    margin-bottom: .4rem;
+}
+.mine_upper_text_subhead{
+    font-size: 14px;
+    color: #9696a1;
+    line-height: 19px;
+    margin-top: 10px;
+    text-align: justify;
+}
+.mine_head h6{
+    font-size: 21px;
+    color: #191919;
+    font-weight: 700;
+    margin-bottom: 16px;
+    margin-top: 3rem;
+}
+.mine_option{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dotted #191919;
+}
+.mine_option img{
+    width: 31px;
+    height: 31px;
+}
+.mine_option a{
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #000;
+}
+.mine_mid{
+    display:flex;
+}
+.mine_mid a{
+    width: 168px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #fff;
+    background: rgba(133,192,185,.15);
+    border: 1px solid #85c0b9;
+    border-radius: 31px;
+    box-sizing: border-box;
+    margin: 10px 0 10px 10px;
+    text-decoration: none;
+}
+/*-------------------------- Mine CODE END--------------------- */
+
 /*------------------------ Deposit Code Starts -----------------------*/
 .recharge_container{
     position: relative;
@@ -797,40 +852,31 @@ input:checked + .slider:before {
 /*------------------------ Investing Code Start -----------------------*/
 .investlisting_nav{
     display: flex;
-    justify-content: space-between;
-    padding: 0 3rem;
+    justify-content: center;
+    padding: 0 2rem;
     margin-top: 1rem;
 }
-.investlisting_item{
+.investlisting_item, .investlisting_item a{
     font-weight: 400;
-    color: #9c87f6;
+    color: #000;
     cursor: pointer;
+    padding: 0.5rem 0.8rem;
+    background: #FFF;
+    font-size: .9rem;
+    text-decoration: none;
 }
 .investlisting_nav .active {
     position: relative;
     font-weight: 800;
     color: #feffff;
+    background-color: #27ad9b;
     z-index: 3;
-}
-.investlisting_nav .active::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -1.8rem;
-    left: 50%;
-    -webkit-transform: translate(-50%);
-    transform: translate(-50%);
-    width: 9.859rem;
-    height: 6.06rem;
-    background: url('../images/list_3.a4a71bd.png') no-repeat 50%;
-    background-size: 100% 100%;
-    z-index: -1;
 }
 .investlisting_box_parent{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 2rem;
-    grid-column-gap: 1.5rem;
+    grid-row-gap: 0;
+    grid-column-gap: .8rem;
     margin-top: 3.3rem;
 }
 .investing_wrap_inner_content{
@@ -843,6 +889,7 @@ input:checked + .slider:before {
 }
 .investing_wrap_inner_content .member_warp_inner_content img {
     width: 100%;
+    height: 10rem;
 }
 .member_warp_inner_content a{
     text-decoration: none;
@@ -867,11 +914,6 @@ background-color: #40afff;
     border-radius: 5px;
     padding: 15px;
     margin-bottom: 15px;
-}
-.investpro_top_box_img{
-    background: url('../images/invest_user.84c0979.png') no-repeat 100% 100%;
-    background-size: 30%;
-    width: 70%;
 }
 .investpro_box{
     padding: .7rem 1.1rem;
@@ -1090,9 +1132,6 @@ background-color: #40afff;
 /*------------------------ Withdrawal Code End -----------------------*/
 
 /*------------------------ Investing Code start -----------------------*/
-.investlisting_box_parent{
-    display: block;
-}
 .investing_wrap_inner_content {
     margin-top: 1.5rem;
 }
